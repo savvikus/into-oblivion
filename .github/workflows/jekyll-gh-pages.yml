@@ -19,7 +19,7 @@ permissions:
   id-token: write
   
 include:
-  ["index.css"
+  ["miscellaneous"]
 
 # Allow one concurrent deployment
 concurrency:
