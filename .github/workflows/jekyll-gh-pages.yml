@@ -2,7 +2,7 @@
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 include:
-  - _miscellaneous
+  [DIR,FILE,...]
   
 on:
   # Runs on pushes targeting the default branch
