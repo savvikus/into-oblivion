@@ -17,6 +17,9 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  
+include:
+  ["index.css"
 
 # Allow one concurrent deployment
 concurrency:
