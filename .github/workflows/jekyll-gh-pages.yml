@@ -18,8 +18,29 @@ permissions:
   pages: write
   id-token: write
   
-include:
-  ["_miscellaneous"]
+# PLUGINS
+#
+# These are additional Ruby gems this guide relies on.
+plugins:
+  - jekyll-assets # https://github.com/jekyll/jekyll-assets
+  - rouge # https://github.com/jneen/rouge
+
+
+# ASSET PIPELINE SETTINGS
+#
+# We use jekyll-assets: https://github.com/jekyll/jekyll-assets
+assets:
+  assets:
+    - "*.png"
+    - "*.gif"
+    - "*.svg"
+  sources:
+    - _assets/scss
+    - _assets/img
+    - _assets/js
+    - _assets/js/vendor
+    - _assets/vendor/ds
+
 
 # Allow one concurrent deployment
 concurrency:
