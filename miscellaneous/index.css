@@ -1,0 +1,246 @@
+html {
+  background-color: #5d4257;
+  top: 5rem;
+  position: relative;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+/*in order to make webquery i need to set most changeable elements to rem and base the screen size off rem from html body*/
+
+#background-image {
+  background-image: url("/miscellaneous/black-void.jpeg");
+  width: 65%;
+  height: 20rem;
+  background-position: center;
+  background-size: cover;
+  position: right;
+  right: 0;
+  overflow: hidden;
+  position: relative;
+  border-width: 3px 3px 3px 0;
+  border: double #262626;
+  border-left: 3px double brown;
+  box-sizing: border-box;
+}
+#first-entry {
+  background-color: #a83e75;
+  text-indent: 15%;
+  width: 35%;
+  position: relative;
+  z-index: 1;
+  float: left;
+  height: 20rem;
+  font-size: 1.6rem;
+  padding: 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: justify;
+  border: double #964f74;
+  border-width: 3px 0 3px 3px;
+  border-right: 3px double brown;
+  overflow-y: hidden;
+}
+hgroup {
+  text-align: center;
+  position: relative;
+  top: -3rem;
+  font-size: 1.6rem;
+}
+.bottom {
+  position: relative;
+  line-height: 2.8;
+  font-size: 1.4rem;
+  top: 3rem;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.left-top {
+  text-decoration: none;
+  float: left;
+  border: solid #e43ae4;
+  width: 48.5%;
+  clear: both;
+  margin: 1px;
+  text-align: center;
+  background-color: violet;
+}
+.right-top {
+  text-decoration: none;
+  float: right;
+  width: 48.5%;
+  position: relative;
+  border: solid #e43ae4;
+  margin: 1px;
+  text-align: center;
+  background-color: violet;
+}
+.left-bottom {
+  text-decoration: none;
+  float: left;
+  width: 48.98%;
+  border: solid #e43ae4;
+  margin: 1px;
+  padding-left: 15.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: violet;
+}
+.right-bottom {
+  text-decoration: none;
+  float: right;
+  width: 48.94%;
+  position: relative;
+  margin: 1px;
+  border: solid #e43ae4;
+  box-sizing: border-box;
+  padding-left: 12.5rem;
+  background-color: violet;
+}
+#logo {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: -4.2rem;
+  border-radius: 50%;
+  border-style:inset;
+}
+
+.progress-name {
+  position: absolute;
+  float: right;
+  top: -5rem;
+  right: 4.5rem;
+  font-size: 1.5rem;
+}
+
+progress[value] {
+  right: 1rem;
+  position: absolute;
+  height: 30px;
+  width: 200px;
+  top: -3rem;
+}
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 200px;
+  height: 30px;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #58083c;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      -45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, #41630f, #cc5500);
+
+  border-radius: 25px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+
+  -webkit-animation: animate-stripes 10s linear infinite;
+  animation: animate-stripes 10s linear infinite;
+}
+@-webkit-keyframes animate-stripes {
+  200% {
+    background-position: 500px 0px;
+  }
+}
+
+@keyframes animate-stripes {
+  200% {
+    background-position: 500px 0px;
+  }
+}
+.meter-name {
+  position: absolute;
+  float: right;
+  top: -1rem;
+  right: 5rem;
+  font-size: 1.5rem;
+}
+meter {
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: whiteSmoke;
+  box-shadow: 0 5px 5px -5px #333 inset;
+  border-radius: 25px;
+}
+meter::-webkit-meter-optimum-value {
+  box-shadow: 0 5px 5px -5px #999 inset;
+  background-image: linear-gradient(
+    90deg,
+    #8bcf69 5%,
+    #e6d450 5%,
+    #e6d450 15%,
+    #f28f68 15%,
+    #f28f68 55%,
+    #cf82bf 55%,
+    #cf82bf 95%,
+    #719fd1 95%,
+    #719fd1 100%
+  );
+  background-size: 100% 100%;
+  border-radius: 25px;
+}
+meter::-webkit-meter-optimum-value {
+  -webkit-transition: width 0.5s;
+}
+
+meter::-webkit-meter-optimum-value:hover {
+  /* Reset each sub-category to 20% */
+  background-image: linear-gradient(
+    90deg,
+    #8bcf69 20%,
+    #e6d450 20%,
+    #e6d450 40%,
+    #f28f68 40%,
+    #f28f68 60%,
+    #cf82bf 60%,
+    #cf82bf 80%,
+    #719fd1 80%,
+    #719fd1 100%
+  );
+  transition: width 0.5s;
+  width: 100% !important; /* !important required. to override the inline styles in WebKit. */
+}
+meter::-webkit-meter-bar {
+  /* Let's animate this */
+  animation: animate-stripes 10s linear infinite;
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    transparent 33%,
+    rgba(0, 0, 0, 0.1) 33%,
+    rgba(0, 0, 0, 0.1) 66%,
+    transparent 66%
+  );
+  background-size: 50px 25px;
+}
+
+@keyframes animate-stripes {
+  to {
+    background-position: 500px 0;
+  }
+}
