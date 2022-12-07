@@ -9,7 +9,7 @@ body {
 }
 /*in order to make webquery i need to set most changeable elements to rem and base the screen size off rem from html body*/
 
-#background-image {
+.background-image {
   background-image: url("../images/black-void.jpg");
   width: 65%;
   height: 20rem;
